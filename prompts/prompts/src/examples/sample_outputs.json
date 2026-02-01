@@ -1,0 +1,24 @@
+[
+ {
+   "round": 1,
+   "user_intent": "rock",
+   "status": "VALID",
+   "reason": "The input clearly indicates the move rock.",
+   "user_move": "rock",
+   "bot_move": "scissors",
+   "round_result": "User wins",
+   "next_action": "Proceed to next round.",
+   "bomb_used_now": false
+ },
+ {
+   "round": 2,
+   "user_intent": "bomb",
+   "status": "VALID",
+   "reason": "Bomb is a valid move and has not been used before.",
+   "user_move": "bomb",
+   "bot_move": "paper",
+   "round_result": "User wins",
+   "next_action": "Proceed to next round.",
+   "bomb_used_now": true
+ }
+]
