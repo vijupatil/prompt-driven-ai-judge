@@ -1,0 +1,24 @@
+Current Round: {round_number}
+User Bomb Used: {user_bomb_used}
+Bot Bomb Used: {bot_bomb_used}
+Bot Move: {bot_move}
+User Input: "{user_text}"
+Steps:
+1. Infer the intended move (rock/paper/scissors/bomb or none).
+2. If intent is ambiguous, mark as UNCLEAR.
+3. If move is invalid, mark as INVALID.
+4. If move is bomb but already used, mark INVALID.
+5. Apply game rules and decide round winner.
+6. If move is INVALID or UNCLEAR, the turn is wasted.
+Output JSON:
+{
+ "round": <number>,
+ "user_intent": "<rock/paper/scissors/bomb/none>",
+ "status": "<VALID/INVALID/UNCLEAR>",
+ "reason": "<short explanation>",
+ "user_move": "<move or none>",
+ "bot_move": "<move>",
+ "round_result": "<User wins/Bot wins/Draw/No contest>",
+ "next_action": "<what happens next>",
+ "bomb_used_now": <true/false>
+}
